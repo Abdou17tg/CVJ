@@ -1,3 +1,114 @@
-html{
-    scroll-behavior: smooth;
-}
+body {
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #71b7e669, #9c59b672);
+    color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    text-shadow: black 1px 0 10px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .logo img {
+    border-radius: 50%;
+  }
+  nav {
+    width: 40%;
+  }
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 2rem; */
+    list-style: none;
+    padding-inline: 40px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+  }
+  a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    transition: width 0.4s ease;
+  }
+  a:hover::after {
+    width: 100%;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+  }
+  #home{
+    background:linear-gradient(rgba(0, 0, 255, 0.223),rgba(255, 255, 255, 0.28)),url("./img.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    
+  }
+  #about{
+    background-color: beige;
+    font-family: "Roboto",serif;
+    margin: 50px;
+    padding: 20px;
+    box-shadow: 0.5px 0.5px 10px grey;
+    width: 80%; 
+    display: flex;
+    gap: 10px;
+  }
+  .contactInfo-skills{
+    width: 50%;
+  }
+  .About-me{
+    width: 50%;
+    gap: 20px;
+  }
+  .contactInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 20%;
+  }
+  .progression{
+    background-color: rgb(7, 235, 68);
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .progression-bar{
+    background-color: rgb(22, 235, 214);
+    border-radius:5px;
+    height: 10px;
+  }
+  .skills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .skill-title{
+    margin-bottom: 10px;
+  }
