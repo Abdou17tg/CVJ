@@ -148,8 +148,8 @@ main {
 }
 
 .project {
+  width: 33%;
   font-family: monospace;
-  width: auto;
   margin: 1em;
   padding: 1em;
   background: white;
